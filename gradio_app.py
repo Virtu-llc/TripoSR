@@ -27,6 +27,8 @@ model = TSR.from_pretrained(
     weight_name="model.ckpt",
 )
 
+print("using devide:", device)
+
 # adjust the chunk size to balance between speed and memory usage
 model.renderer.set_chunk_size(8192)
 model.to(device)
