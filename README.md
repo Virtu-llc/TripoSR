@@ -4,6 +4,14 @@
   <img src="figures/teaser800.gif" alt="Teaser Video">
 </div>
 
+## Setup 
+1. conda create -n  tripo python=3.10
+2. pip install --upgrade setuptools
+3. pip install -r requirements.txt
+4. pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+5. pip install -r requirements.txt
+6. python run.py examples/chair.png --output-dir output/
+
 This is the official codebase for **TripoSR**, a state-of-the-art open-source model for **fast** feedforward 3D reconstruction from a single image, collaboratively developed by [Tripo AI](https://www.tripo3d.ai/) and [Stability AI](https://stability.ai/).
 <br><br>
 Leveraging the principles of the [Large Reconstruction Model (LRM)](https://yiconghong.me/LRM/), TripoSR brings to the table key advancements that significantly boost both the speed and quality of 3D reconstruction. Our model is distinguished by its ability to rapidly process inputs, generating high-quality 3D models in less than 0.5 seconds on an NVIDIA A100 GPU. TripoSR has exhibited superior performance in both qualitative and quantitative evaluations, outperforming other open-source alternatives across multiple public datasets. The figures below illustrate visual comparisons and metrics showcasing TripoSR's performance relative to other leading models. Details about the model architecture, training process, and comparisons can be found in this [technical report](https://arxiv.org/abs/2403.02151).
